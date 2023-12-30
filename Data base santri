@@ -1,0 +1,41 @@
+/*
+DATABASE SANTRI 
+*/
+
+
+create table Data_Santri(
+Nmr int,
+Nama_Santri varchar(50),
+Kelas int,
+Kamar varchar(50),
+)
+
+select *
+from Data_Santri
+
+insert into Data_Santri values(
+'1','Nabil A','8','Thalhah 02'),
+('2','Akmal B','8','Thalhah 02'),
+('3','Rainando R','8','Thalhah 02'),
+('4','Radit R','8','Thalhah 02'),
+('5','Humza S','8','Thalhah 02'),
+('6','Aldiano','8','Thalhah 02'),
+('7','Hafidz','8','Thalhah 02'),
+('8','Arkan A','8','Thalhah 02'),
+('9','Putra A','8','Thalhah 02'),
+('10','Sahal H','8','Thalhah 02'),
+('11','Fajar A','7','Syubah'),
+('12','Yusuf','7','Syubah'),
+('13','Arif H','6','Syubah'),
+('14','Husain','4','Syubah'),
+('15','Zaki M','5','Syubah')
+
+
+
+update [My project].dbo.Data_Santri
+set Nmr = 90
+where Nama_Santri= 'Zaki M' and Kelas='5'
+
+delete from [My project].dbo.Data_Santri
+where Nmr='90'
+
